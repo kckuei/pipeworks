@@ -1,12 +1,11 @@
 # PipeWorks
-* Repo for the `Python` `pipeworks` package. 
+* Repository for the `pipeworks` `Python` package. 
 * Contains a collection of classes and functions for computing pressurized and open channel hydraulics for outlet works.
-* Release versions are archived in `/packages`.
-* Current development branch in `/dev`.
+* Current development branch in `/dev`. Release versions are archived in `/packages`.
 
 
 ## Installation
-Install from [PyPI]((https://pypi.org/project/pipeworks/)) using `pip`:
+Install from [PyPI](https://pypi.org/project/pipeworks/) using `pip`:
 ```
 pip install pipeworks
 ```
@@ -16,7 +15,8 @@ For a particular version, use:
 pip install pipeworks=0.0.2
 ```
 
-Alternatively, install from [Anaconda](https://anaconda.org/kckuei/pipeworks)) using `conda`:
+
+Alternatively, install from [Anaconda](https://anaconda.org/kckuei/pipeworks) using `conda`:
 ```
 conda install -c kckuei pipeworks
 ```
@@ -33,7 +33,7 @@ help(pw)
 Example - Weir Rating Curve
 ```python
 import pipeworks as pw
-import matplotlib.pylas as plt
+import matplotlib.pyplot as plt
 
 length = 45
 height = 3.9
@@ -51,7 +51,7 @@ plt.show()
 Example - Drop Inlet Rating Curve
 ```python
 import pipeworks as pw
-import matplotlib.pylas as plt
+import matplotlib.pyplot as plt
 
 diam = 72/12
 dH = 9
@@ -69,7 +69,7 @@ plt.show()
 Example - Pressurized Section
 ```python
 import pipeworks as pw
-import matplotlib.pylas as plt
+import matplotlib.pyplot as plt
 
 length, diam = 900, 72/12
 C, K = 140, 5
