@@ -2,8 +2,8 @@
 
 ## Version History
 
-0.0.2 - Initial package with `hatchling`.
-0.0.3 - Switch to `setuptools` and add package version depenencies. Added Anaconda as option.
+* 0.0.2 - Initial package with `hatchling`.
+* 0.0.3 - Switch to `setuptools` and add package version depenencies. Added Anaconda as option.
 
 
 ## Packaging and Building with PyPI (pip install)
