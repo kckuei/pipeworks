@@ -1,0 +1,45 @@
+{% set name = "pipeworks" %}
+{% set version = "0.0.3" %}
+
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pipeworks-{{ version }}.tar.gz
+  sha256: 444273712fd628c53f94644cd2ffa96815adb8810907cf989a7b61dcf26b59fb
+
+build:
+  number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python >=3.9
+  run:
+    - python >=3.9
+    - matplotlib >=3.4
+    - numpy >=1.2
+    - scipy >=1.7
+    - pandas >=1.3
+
+test:
+  imports:
+    - pipeworks
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://pypi.org/project/pipeworks/
+  summary: Collection of classes for calculating pressurized and open channel flow hydraulics for outlet works.
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - kckuei
