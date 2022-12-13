@@ -1,4 +1,4 @@
-# PipeWorks
+# pipeworks
 * Repository for the `pipeworks` `Python` package. 
 * Contains a collection of classes and functions for computing pressurized and open channel hydraulics for outlet works.
 * Current development branch in `/dev`. Release versions are archived in `/packages`.
