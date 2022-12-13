@@ -6,23 +6,23 @@
 
 ## Installation
 Install from [PyPI](https://pypi.org/project/pipeworks/) using `pip`:
-```
+```bash
 pip install pipeworks
 ```
 
 For a particular version, use:
-```
+```bash
 pip install pipeworks=0.0.2
 ```
 
 
 Alternatively, install from [Anaconda](https://anaconda.org/kckuei/pipeworks) using `conda`:
-```
+```bash
 conda install -c kckuei pipeworks
 ```
 
 Verify the installation:
-```
+```python
 python3
 import pipeworks as pw
 help(pw)
